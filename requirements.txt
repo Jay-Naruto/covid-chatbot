@@ -6,7 +6,7 @@ cffi
 chardet==3.0.4
 Click==7.0
 configreader==0.0.6
-cryptography==2.8
+cryptography
 cycler==0.10.0
 dnspython==1.16.0
 Flask==1.1.1
@@ -14,9 +14,9 @@ Flask-Cors==3.0.8
 idna==2.9
 itsdangerous==1.1.0
 Jinja2==2.11.1
-kiwisolver==1.1.0
+kiwisolver
 MarkupSafe==1.1.1
-psutil==5.7.0
+psutil
 pycparser==2.20
 pymongo==3.9.0
 pyOpenSSL==19.1.0
@@ -25,7 +25,7 @@ PySocks==1.7.1
 python-dateutil==2.8.1
 pytz==2019.3
 requests==2.23.0
-six==1.14.0
+six==1.15.0
 soupsieve==2.0
 SQLAlchemy==1.3.13
 tzlocal==2.0.0
