@@ -10,10 +10,13 @@ from DataRequests import MakeApiRequests
 from sendEmail import EMailClient
 from pymongo import MongoClient
 
+
 app = Flask(__name__)  # initialising the flask app with the name 'app'
 
 
 # geting and sending response to dialogflow
+
+
 @app.route('/webhook', methods=['POST'])
 @cross_origin()
 def webhook():
@@ -255,10 +258,10 @@ def prepareEmail(contact_list):
     mailclient.sendEmail(contact_list)
 
 
-if __name__ == '__main__':
-    port = 3000
-    print("Starting app on port %d" % port)
-    app.run(debug=False, port=port, host='0.0.0.0')
-# if __name__ == "__main__":
-#     app.run(port=3000, debug=True)
+# if __name__ == '__main__':
+#     port = 3000
+#     print("Starting app on port %d" % port)
+#     app.run(debug=False, port=port, host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(port=5000, debug=True)
 # running the app on the local machine on port 8000
